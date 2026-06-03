@@ -785,15 +785,8 @@
                             将"情绪"与"气象"进行隐喻映射的创意项目。把抽象的情绪状态转化为可视、可听、可交互的"气象现象"，帮助人们更好地觉察、表达和管理自己的情绪。
                         </p>
 
-                        <div class="content-slot rounded-xl mb-8" style="min-height: 240px;">
-                            <div class="slot-label" style="display:flex;flex-direction:column;gap:12px;align-items:center;">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1">
-                                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                                    <circle cx="12" cy="12" r="4"/>
-                                </svg>
-                                <span>VS Code 生成网页 / 交互演示</span>
-                                <span style="font-size:0.65rem;color:rgba(255,255,255,0.12);">点击卡片查看详情与演示</span>
-                            </div>
+                        <div class="rounded-xl mb-8 overflow-hidden border border-white/[0.06] bg-black/20">
+                            <img src="weather-preview.jpg" alt="情绪气象站预览" class="w-full h-auto object-cover" style="max-height: 400px;">
                         </div>
 
                         <div class="flex items-end justify-between">
@@ -931,6 +924,9 @@
                         <span class="skill-tag cursor-hover-trigger">HTML/CSS</span>
                         <span class="skill-tag cursor-hover-trigger">JavaScript</span>
                         <span class="skill-tag cursor-hover-trigger">交互设计</span>
+                        <span class="skill-tag cursor-hover-trigger">Processing</span>
+                        <span class="skill-tag cursor-hover-trigger">TouchDesigner</span>
+                        <span class="skill-tag cursor-hover-trigger">Unity</span>
                     </div>
                 </div>
 
@@ -1186,12 +1182,12 @@
                 date: '2026.05 · 历时3周+',
                 color: 'blue',
                 score: getLatestScore('sw') || '--',
-                demoUrl: 'https://weather-of-self-05.netlify.app',
+                demoUrl: 'https://你的演示链接.com',
                 sections: [
                     { title: 'Project Overview', content: '情绪气象站是一个将"情绪"与"气象"进行隐喻映射的创意项目体系。就像自然界有晴、雨、雷、雪等天气现象，人类的内心世界也存在着丰富多变的情绪景观。本项目旨在通过数字产品，将抽象的情绪状态转化为可视、可听、可交互的"气象现象"，帮助人们更好地觉察、表达和管理自己的情绪。' },
                     { title: 'Design Concept', content: '以气象学为隐喻框架，建立情绪-气象的映射关系：晴天对应愉悦、雨天对应忧郁、雷暴对应愤怒、雪天对应平静。用户可以通过界面选择或检测当前情绪状态，系统生成对应的气象可视化场景，并提供情绪调节的互动体验。' },
                     { title: 'Tech Stack', content: '使用 VS Code 作为开发环境，基于 HTML5 + CSS3 + JavaScript 构建前端交互界面。利用 Canvas 绘制动态气象效果，Web Audio API 生成环境音效，LocalStorage 实现数据持久化。' },
-                    { title: 'Key Features', content: '① 情绪选择器：提供多种情绪标签供用户选择；② 气象可视化：根据情绪生成对应的动态天气场景；③ 情绪日记：记录情绪变化轨迹，生成个人情绪气象图；④ 调节互动：通过呼吸练习、冥想引导等方式帮助情绪调节。' },
+                    { title: 'Key Features', content: '① 多模态情绪感知：集成音频频谱分析、运动热图追踪、实时视频流，通过多维度数据捕捉用户情绪状态；② 动态气象可视化：中央主视窗实时渲染天气场景（多云/晴朗/雨天等），配合温度、气压、风速、湿度数据，将情绪强度量化为气象指标；③ 手动/自动双模式：支持手动选择情绪标签（喜悦、平静、爱意、焦虑、悲伤、愤怒、恐惧），或启动自动感知模式实时分析；④ 数据面板系统：左侧 Audio Spectrum、Motion Heatmap、Raw Feed 监控面板，右侧 Real-time Log 实时记录情绪变化轨迹。' },
                     { title: 'Reflection', content: '本项目最大的挑战在于如何将抽象的情绪体验转化为具象的视觉语言。通过气象隐喻，我们找到了一个既直观又富有诗意的表达方式。未来可以考虑引入生理信号检测（如心率、皮肤电反应）来实现更精准的情绪识别。' }
                 ]
             },
