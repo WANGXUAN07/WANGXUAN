@@ -802,7 +802,7 @@
                     </div>
                 </div>
 
-                <!-- 02 HW -->
+                <!-- 02 HW: 触·渔 -->
                 <div class="work-card rounded-2xl p-8 md:p-10 cursor-hover-trigger reveal" data-cat="hw" onmousemove="trackMouse(event, this)" onclick="openDetail('hw')">
                     <div class="corner-mark corner-tl"></div>
                     <div class="corner-mark corner-tr"></div>
@@ -814,22 +814,23 @@
                     <div class="relative z-10">
                         <div class="flex items-center justify-between mb-8">
                             <span class="cat-pill cat-hw">Hardware</span>
-                            <span class="font-mono text-[10px] text-white/20">[ 日期 ]</span>
+                            <span class="font-mono text-[10px] text-white/20">2026.06</span>
                         </div>
 
-                        <h3 class="text-2xl md:text-3xl font-bold mb-4 leading-tight text-white/90">[ 作业标题 ]</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4 leading-tight text-white/90">触·渔</h3>
                         <p class="text-white/40 text-sm leading-relaxed mb-8">
-                            [ 作业简介占位 — 请填入硬件方案、传感器选型与电路设计 ]
+                            一款软硬件结合的体感捕鱼游戏。超声波传感器实时捕捉手部距离，映射为三维空间中渔网的深度运动。无需触屏，隔空操控，让"捞鱼"回归最直觉的身体动作。
                         </p>
 
-                        <div class="content-slot rounded-xl mb-8">
-                            <span class="slot-label">[ 电路图 / 实物照片 / 原理框图 占位 ]</span>
+                        <div class="rounded-xl mb-8 overflow-hidden border border-white/[0.06] bg-black/20">
+                            <img src="chuyu-preview.jpg" alt="触·渔游戏预览" class="w-full h-auto object-cover" style="max-height: 400px;">
                         </div>
 
                         <div class="flex items-end justify-between">
                             <div class="flex gap-2">
-                                <span class="px-3 py-1.5 rounded-lg border border-white/[0.08] text-[10px] text-white/30 font-mono uppercase">[ 工具1 ]</span>
-                                <span class="px-3 py-1.5 rounded-lg border border-white/[0.08] text-[10px] text-white/30 font-mono uppercase">[ 工具2 ]</span>
+                                <span class="px-3 py-1.5 rounded-lg border border-white/[0.08] text-[10px] text-white/30 font-mono uppercase">Arduino</span>
+                                <span class="px-3 py-1.5 rounded-lg border border-white/[0.08] text-[10px] text-white/30 font-mono uppercase">Three.js</span>
+                                <span class="px-3 py-1.5 rounded-lg border border-white/[0.08] text-[10px] text-white/30 font-mono uppercase">Web Serial</span>
                             </div>
                             <div class="text-right">
                                 <div class="score-big text-emerald-400" id="card-score-hw">--</div>
@@ -1182,7 +1183,7 @@
                 date: '2026.05 · 历时3周+',
                 color: 'blue',
                 score: getLatestScore('sw') || '--',
-                demoUrl: 'https://weather-of-self-05.netlify.app',
+                demoUrl: 'https://你的演示链接.com',
                 sections: [
                     { title: 'Project Overview', content: '情绪气象站是一个将"情绪"与"气象"进行隐喻映射的创意项目体系。就像自然界有晴、雨、雷、雪等天气现象，人类的内心世界也存在着丰富多变的情绪景观。本项目旨在通过数字产品，将抽象的情绪状态转化为可视、可听、可交互的"气象现象"，帮助人们更好地觉察、表达和管理自己的情绪。' },
                     { title: 'Design Concept', content: '以气象学为隐喻框架，建立情绪-气象的映射关系：晴天对应愉悦、雨天对应忧郁、雷暴对应愤怒、雪天对应平静。用户可以通过界面选择或检测当前情绪状态，系统生成对应的气象可视化场景，并提供情绪调节的互动体验。' },
@@ -1192,19 +1193,20 @@
                 ]
             },
             hw: {
-                title: '[ 作业标题 ]',
+                title: '触·渔',
                 cat: 'cat-hw',
                 catLabel: 'Hardware',
-                date: '[ 日期 ]',
+                date: '2026.06 · 体感交互游戏',
                 color: 'emerald',
                 score: getLatestScore('hw') || '--',
                 demoUrl: '#',
                 sections: [
-                    { title: 'Project Overview', content: '[ 项目背景与目标占位 — 请填入问题定义、方案对比、可行性分析 ]' },
-                    { title: 'Circuit Design', content: '[ 电路设计占位 — 请填入原理图、PCB 布局、元器件选型 ]' },
-                    { title: 'Mechanical Design', content: '[ 结构设计占位 — 请填入 3D 模型、材料选择、装配工艺 ]' },
-                    { title: 'Testing', content: '[ 测试占位 — 请放置实物照片、测试数据、调试过程 ]' },
-                    { title: 'Reflection', content: '[ 反思与收获占位 — 请填入工程思维、成本控制、可制造性 ]' }
+                    { title: 'Project Overview', content: '「触·渔」是一款软硬件结合的体感捕鱼游戏。核心创意在于打破传统触屏游戏的交互边界，通过超声波传感器捕捉手部与设备的物理距离，将身体动作直接映射为游戏内渔网的三维深度运动。玩家无需触碰任何屏幕，仅凭隔空手势即可操控捞鱼，让"捞鱼"这一动作回归最直觉的身体经验。' },
+                    { title: 'Hardware Design', content: '硬件端采用 Arduino UNO 作为主控，搭配 HC-SR04 超声波测距模块。传感器实时检测手部距离（量程 2-50cm），通过串口通信将距离数据发送至前端。电路简洁，仅需 5V 供电，两根信号线（Trig/Echo）连接，即插即用。' },
+                    { title: 'Software & Interaction', content: '前端基于 Three.js 构建三维水下场景，35 条不同大小的彩色鱼群在三维空间中自由游动。通过 Web Serial API 直接读取 Arduino 串口数据，将手部距离实时映射为渔网深度：手越靠近传感器，渔网下潜越深。鱼群 AI 分为好奇型和躲避型，大鱼分数高但游速慢，小鱼易捕获但分值低，配合连击系统增加游戏性。' },
+                    { title: 'Key Features', content: '① 隔空体感操控：超声波传感器捕捉手部距离，零接触完成深度控制；② 三维水下世界：Three.js 实时渲染水面涟漪、鱼群游动、气泡粒子效果；③ 双模式鱼群 AI：好奇型鱼被渔网吸引，躲避型鱼主动逃离，增加策略性；④ 连击计分系统：连续捕获触发连击倍率，最高可达数十倍；⑤ 本地排行榜：成绩自动保存，支持历史记录回顾。' },
+                    { title: 'Demo', content: '项目包含完整的 Arduino 固件和前端代码。硬件端上传固件后，前端通过浏览器串口连接即可运行。支持 Chrome/Edge 等支持 Web Serial API 的浏览器。' },
+                    { title: 'Reflection', content: '本项目最大的挑战在于传感器数据的平滑处理与延迟优化。超声波传感器原始数据存在抖动，通过滑动平均和阈值过滤实现稳定的手部追踪。同时，Web Serial API 的浏览器兼容性限制了演示环境，未来可考虑增加蓝牙模块方案以扩展适用性。' }
                 ]
             },
             iot: {
